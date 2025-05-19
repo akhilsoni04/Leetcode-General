@@ -1,0 +1,7 @@
+O(1) Time Complexity → No recursion, only bitwise operations, O(1) Space Complexity → No extra memory used
+
+class Solution {
+    public boolean isPowerOfFour(int n) {
+        return n>0 & (n & (n-1))== 0 && (n & 0xAAAAAAAA) == 0;
+    }
+}
